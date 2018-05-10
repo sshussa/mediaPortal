@@ -1,0 +1,56 @@
+{
+  "name": "brinker-media-room",
+  "version": "0.0.1",
+  "private": true,
+  "description": "This is node/express application integrated with prismic cms",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"No test available for this app ...\" && exit 0",
+    "posttest": "./node_modules/.bin/gulp build",
+    "preversion": "npm test",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags && rm -rf build/temp"
+  },
+  "keywords": [],
+  "author": "syed shafeeq hussain",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookies": "~0.7.0",
+    "debug": "~3.1.0",
+    "errorhandler": "~1.5.0",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0",
+    "method-override": "~2.3.10",
+    "morgan": "~1.9.0",
+    "mssql": "^4.1.0",
+    "node-fetch": "^2.1.2",
+    "nodemailer": "^4.6.4",
+    "path": "^0.12.7",
+    "prismic-dom": "~2.0.4",
+    "prismic-javascript": "~1.4.0",
+    "pug": "~2.0.0-rc.2",
+    "querystring": "^0.2.0",
+    "request": "~2.83.0",
+    "serve-favicon": "~2.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dhsrcctl.home.eat.brinker.org/BrinkerSites/BrinkerMediaRoom.git"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-eslint": "*",
+    "babel-preset-env": "*",
+    "eslint": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-import": "*",
+    "nodemon": "*",
+    "gulp": "*"
+  },
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  }
+}

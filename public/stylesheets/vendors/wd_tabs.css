@@ -1,0 +1,87 @@
+.wd_tabs_wrapper {
+	background: #f8f8f8 url(../images/webdriver/tabs_background.gif) 0 bottom repeat-x;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #e1e1e1;
+}
+
+.wd_tabs {
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.wd_tab {
+	display: block;
+	float: left;
+	padding: 8px 20px;
+	margin: 1px 0 0;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #e1e1e1;
+	white-space: nowrap;
+}
+
+.wd_tab-inactive {
+	background-color: transparent;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.wd_tab-active {
+	background-color: #fff;
+	color: #333;
+	font-weight: bold;
+}
+
+.wd_tab_content-inactive {
+	position: absolute;
+	left: -10000px;
+	width: 1000px;
+}
+
+/** For rounded tabs override with:
+.wd_featureboxes_middle .wd_tabs_wrapper {
+	background: 0 none;
+	border: 0 none;
+}
+
+.wd_featureboxes_middle .wd_tab {
+	margin: 0 0.3em 0 0;
+	padding: 0.5em;
+	border: 1px solid #cccccc;
+	border-bottom-width: 0px;
+	border-top-left-radius: 0.5em; -moz-border-radius-topleft: 0.5em; -webkit-border-top-left-radius: 0.5em;
+	border-top-right-radius: 0.5em; -moz-border-radius-topright: 0.5em; -webkit-border-top-right-radius: 0.5em;
+}
+
+.wd_featureboxes_middle .wd_tab-inactive {
+	background-color: #eeeeee;
+}
+
+.wd_featureboxes_middle .wd_tab-inactive:hover {
+	background-color: #dddddd;
+	border-color: #aaaaaa;
+}
+**/
+
+/** For floating icons (e.g. socialhub, case 4584)
+.wd_featureboxes_socialhub .wd_tabs_wrapper {
+	background: 0 none;
+	padding: 5px;
+}
+
+.wd_featureboxes_socialhub .wd_tab {
+	margin: 1px;
+	padding: 4px;
+	border: 0px;
+	background-color: transparent;
+}
+
+.wd_featureboxes_socialhub .wd_tab-active {
+	padding: 3px;
+	background-color: #dddddd;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+}
+**/

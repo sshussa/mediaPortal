@@ -1,0 +1,83 @@
+.wd_form_field {
+	overflow: auto;
+	margin: 5px;
+	padding: 0;
+	border: none;
+}
+
+.wd_form_field_label { 
+	padding: 0;
+}
+
+.wd_form_field_error {
+	color: #ff0000;
+}
+
+.wd_input_border {
+	display:inline-block;
+	border:0px solid transparent;
+	margin:0px;
+	padding:0px;
+}
+
+.wd_form_footer {
+	margin: 5px;
+}
+
+@media(max-width:768px) {
+	.wd_form_field_label { 
+		text-align: left;
+	}
+	.wd_form_field_pos_left_inline .wd_form_field_input,
+	.wd_form_field_pos_left_inline .wd_form_field_label,
+	.wd_form_field_pos_right_inline .wd_form_field_input, 
+	.wd_form_field_pos_right_inline .wd_form_field_label { 
+		display: inline;
+	}
+}
+
+@media(min-width:769px) {
+	.wd_form_field_pos_right .wd_form_field_label,
+	.wd_form_field_pos_right_inline .wd_form_field_label,
+	div.wd_form_footer div.wd_form_legend { 
+		float: left;
+		width: 150px;
+		text-align: right;
+	}
+	.wd_form_field_pos_left .wd_form_field_input,
+	.wd_form_field_pos_left_inline .wd_form_field_input {
+		float: left;
+		min-width: 150px;
+		text-align: right;
+	}
+	.wd_form_field_pos_left .wd_form_field_label,
+	.wd_form_field_pos_left_inline .wd_form_field_label,
+	.wd_form_field_pos_right .wd_form_field_input,
+	.wd_form_field_pos_right_inline .wd_form_field_input,
+	.wd_form_field_pos_above .wd_form_field_input,
+	.wd_form_field_pos_above .wd_form_field_label,
+	.wd_form_field_pos_below .wd_form_field_input,
+	.wd_form_field_pos_below .wd_form_field_label,
+	div.wd_form_footer div.wd_form_buttons {
+		margin-left: 155px;
+		overflow: auto;
+	}
+}
+
+.wd_featureboxes-vertical .wd_form_field_input, 
+.wd_featureboxes-vertical .wd_form_field_label,
+.wd_featureboxes-vertical div.wd_form_footer div.wd_form_legend,
+.wd_featureboxes-vertical div.wd_form_footer div.wd_form_buttons {
+	display: inline;
+	float: none;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: left;
+	margin-left: 0;
+	overflow: auto;
+}
+
+.wd_featureboxes-vertical .wd_form_field_input input { 
+	max-width: 100%;
+	box-sizing: border-box;
+}
